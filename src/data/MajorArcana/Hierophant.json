@@ -1,0 +1,10 @@
+{
+  "name": "The Hierophant",
+  "number": 5,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Tradition, teaching, spiritual guidance, institutions.",
+  "reversedMeaning": "Rebellion, questioning tradition, nonconformity, personal belief.",
+  "symbols": ["keys", "triple crown", "pillars", "acolytes"],
+  "emotionalTone": "Formal, instructive, sacred",
+  "keywords": ["tradition", "teacher", "ritual", "belief"]
+}

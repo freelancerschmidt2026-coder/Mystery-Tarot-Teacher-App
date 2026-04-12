@@ -1,0 +1,226 @@
+.achievements-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #e0d8d0;
+}
+
+.achievements-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.achievements-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #f3e5ab;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(243, 229, 171, 0.3);
+}
+
+.achievements-header p {
+  font-style: italic;
+  opacity: 0.6;
+}
+
+/* Title Selector Section */
+.title-selector-card {
+  background: rgba(20, 20, 25, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.current-title-display {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #add8e6;
+  margin: 1rem 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.titles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.title-badge {
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.title-badge.active {
+  background: #add8e6;
+  color: #1a1a1a;
+  border-color: #add8e6;
+  box-shadow: 0 0 15px rgba(173, 216, 230, 0.4);
+}
+
+.title-badge.locked {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background: transparent;
+}
+
+.title-badge:hover:not(.locked) {
+  transform: translateY(-2px);
+  border-color: #add8e6;
+}
+
+/* Badge Categories & Grid */
+.badge-category-section {
+  margin-bottom: 4rem;
+}
+
+.category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f3e5ab;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.badge-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-card.unlocked {
+  background: rgba(243, 229, 171, 0.05);
+  border-color: rgba(243, 229, 171, 0.2);
+}
+
+.badge-card.locked {
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+.badge-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f3e5ab;
+}
+
+.badge-card.unlocked .badge-icon-wrapper {
+  background: radial-gradient(circle, rgba(243, 229, 171, 0.2) 0%, transparent 70%);
+  box-shadow: 0 0 20px rgba(243, 229, 171, 0.1);
+}
+
+.badge-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.badge-desc {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  line-height: 1.4;
+}
+
+.badge-secret-hint {
+  font-style: italic;
+  font-size: 0.7rem;
+  color: #add8e6;
+}
+
+/* Progress Section */
+.achievement-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.stat-progress-bg {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+}
+
+.stat-progress-fill {
+  height: 100%;
+  background: #add8e6;
+  border-radius: 2px;
+}
+
+/* Unlock Notification */
+.unlock-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #1a1a1a;
+  border: 1px solid #f3e5ab;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  z-index: 2000;
+}
+
+.toast-icon {
+  color: #f3e5ab;
+}
+
+.toast-content h4 {
+  font-family: 'Playfair Display', serif;
+  color: #f3e5ab;
+  margin: 0;
+}
+
+.toast-content p {
+  font-size: 0.8rem;
+  margin: 0;
+  opacity: 0.7;
+}

@@ -1,0 +1,53 @@
+.prize-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.prize-popup-card {
+  background: #000;
+  border: 3px solid #6EC1FF;
+  box-shadow: 0 0 20px #FF4FFB;
+  padding: 30px;
+  width: 420px;
+  border-radius: 12px;
+  animation: popupFade 0.4s ease-out forwards;
+  cursor: pointer;
+}
+
+@keyframes popupFade {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.prize-title {
+  color: orange;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.prize-reward {
+  color: #6EC1FF;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.prize-description {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.open-mystery-btn {
+  background: linear-gradient(90deg, #6EC1FF, #FF4FFB);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}

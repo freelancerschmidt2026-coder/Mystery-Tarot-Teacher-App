@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+.finder-backpocket-container {
+  padding: 40px;
+  background-color: #0a0a0a;
+  min-height: 100vh;
+  color: #add8e6;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.finder-backpocket-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.finder-backpocket-header h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(173, 216, 230, 0.4);
+}
+
+.finder-backpocket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.finder-backpocket-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(173, 216, 230, 0.2);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.finder-backpocket-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(173, 216, 230, 0.3);
+  border-color: #add8e6;
+}
+
+.item-type {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.item-text {
+  font-size: 1.4rem;
+  font-style: italic;
+}

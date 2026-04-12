@@ -1,0 +1,101 @@
+.animated-card-template {
+  position: relative;
+  width: 320px;
+  height: 512px;
+  margin: 0 auto;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card-base {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-base-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card-border {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+/* Example border animations */
+.border-anim-border-pulse {
+  animation: borderPulse 2.2s ease-in-out infinite;
+}
+
+.border-anim-gradient-flow {
+  animation: gradientFlow 4s linear infinite;
+}
+
+.border-anim-orbit {
+  animation: orbitGlow 5s ease-in-out infinite;
+}
+
+/* Example symbol animations */
+.card-symbol {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  z-index: 10;
+}
+
+.card-symbol:active {
+  cursor: grabbing;
+}
+
+.symbol-anim-pulse {
+  animation: symbolPulse 2s ease-in-out infinite;
+}
+
+.symbol-anim-glow {
+  animation: symbolGlow 3s ease-in-out infinite;
+}
+
+.symbol-anim-radiate {
+  animation: symbolRadiate 2.5s linear infinite;
+}
+
+/* Keyframes */
+@keyframes borderPulse {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 200, 255, 0.4)); opacity: 0.7; }
+  50% { filter: drop-shadow(0 0 12px rgba(0, 200, 255, 0.9)); opacity: 1; }
+}
+
+@keyframes gradientFlow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes orbitGlow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4)); }
+  50% { filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9)); }
+}
+
+@keyframes symbolPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.15); }
+}
+
+@keyframes symbolGlow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(150, 200, 255, 0.4)); }
+  50% { filter: drop-shadow(0 0 8px rgba(150, 200, 255, 0.9)); }
+}
+
+@keyframes symbolRadiate {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}

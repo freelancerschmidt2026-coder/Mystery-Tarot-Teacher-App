@@ -1,0 +1,10 @@
+{
+  "name": "Justice",
+  "number": 11,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Fairness, truth, accountability, cause and effect.",
+  "reversedMeaning": "Dishonesty, unfairness, avoidance of responsibility, imbalance.",
+  "symbols": ["scales", "sword", "pillars", "crown"],
+  "emotionalTone": "Clear, rational, balanced",
+  "keywords": ["truth", "fairness", "karma", "responsibility"]
+}

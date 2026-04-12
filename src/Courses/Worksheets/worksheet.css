@@ -1,0 +1,215 @@
+.worksheet-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #e0d8d0;
+  font-family: 'Inter', sans-serif;
+}
+
+.worksheet-header {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.worksheet-title-group h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+}
+
+.worksheet-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 4px;
+}
+
+.auto-save-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #add8e6;
+  opacity: 0.6;
+}
+
+.worksheet-section {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.worksheet-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #add8e6;
+}
+
+.question-item {
+  margin-bottom: 30px;
+}
+
+.question-text {
+  font-size: 17px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.text-input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 15px;
+  color: #fff;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.text-input:focus {
+  border-color: #add8e6;
+  outline: none;
+}
+
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-label:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.option-label.selected {
+  background: rgba(173, 216, 230, 0.1);
+  border-color: rgba(173, 216, 230, 0.3);
+}
+
+.option-label input {
+  display: none;
+}
+
+.reflection-area {
+  width: 100%;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  color: #fff;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  resize: vertical;
+}
+
+.submit-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.submit-btn {
+  background: #add8e6;
+  color: #000;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.4);
+}
+
+/* Results & Remediation */
+.results-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(173, 216, 230, 0.3);
+  text-align: center;
+  margin-top: 40px;
+}
+
+.score-display {
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.score-display.pass { color: #4ade80; }
+.score-display.fail { color: #f87171; }
+
+.status-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.remediation-mode {
+  margin-top: 40px;
+  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+}
+
+.remediation-mode h3 {
+  color: #f87171;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.incorrect-item {
+  margin-bottom: 25px;
+  background: rgba(248, 113, 113, 0.05);
+  padding: 20px;
+  border-left: 3px solid #f87171;
+}
+
+.correct-explanation {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #add8e6;
+  font-style: italic;
+}
+
+.retry-btn {
+  margin-top: 30px;
+  background: transparent;
+  border: 1px solid #add8e6;
+  color: #add8e6;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s ease;
+}
+
+.retry-btn:hover {
+  background: rgba(173, 216, 230, 0.1);
+}

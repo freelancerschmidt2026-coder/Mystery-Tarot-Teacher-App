@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+.confirmation-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.luxury-card {
+  width: 480px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  border-radius: 2px; /* Sharper, more ancient luxury feel */
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(173, 216, 230, 0.1);
+}
+
+.card-chrome-edge {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(45deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.moonlit-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(173, 216, 230, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.ceremonial-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moon-sigil-icon {
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 15px rgba(173, 216, 230, 0.4));
+}
+
+.confirmation-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+.confirmation-message {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.highlight-name {
+  color: #add8e6;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.sigil-button {
+  background: transparent;
+  border: 1px solid #add8e6;
+  color: #add8e6;
+  padding: 14px 40px;
+  border-radius: 9999px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.particle-shimmer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.shimmer-dot {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #add8e6;
+  border-radius: 50%;
+  filter: blur(1px);
+}

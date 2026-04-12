@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+.finder-journey-container {
+  padding: 60px 40px;
+  background-color: #000;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.journey-header {
+  text-align: center;
+  margin-bottom: 80px;
+  z-index: 1;
+}
+
+.journey-header h2 {
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 20px rgba(173, 216, 230, 0.4);
+  margin-bottom: 10px;
+}
+
+.journey-header p {
+  font-size: 1.1rem;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.journey-path {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  max-width: 800px;
+  z-index: 1;
+}
+
+/* Connecting Line */
+.journey-path::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(173, 216, 230, 0.3), transparent);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.journey-step {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.journey-step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.step-node-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.step-node {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.step-node.completed {
+  background: #add8e6;
+  box-shadow: 0 0 15px rgba(173, 216, 230, 0.8);
+}
+
+.step-node.active {
+  background: #fff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+  animation: moonlit-pulse 3s infinite ease-in-out;
+}
+
+.step-node.locked {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+@keyframes moonlit-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 1; box-shadow: 0 0 35px rgba(255, 255, 255, 1); }
+}
+
+.step-content {
+  width: 40%;
+  padding: 0 40px;
+  text-align: right;
+}
+
+.journey-step:nth-child(even) .step-content {
+  text-align: left;
+}
+
+.step-title {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s ease;
+}
+
+.step-description {
+  font-size: 0.95rem;
+  opacity: 0.5;
+  line-height: 1.5;
+  font-style: italic;
+  transition: opacity 0.3s ease;
+}
+
+.journey-step.locked .step-title,
+.journey-step.locked .step-description {
+  opacity: 0.2;
+}
+
+.guidance-panel {
+  margin-top: 100px;
+  text-align: center;
+  max-width: 500px;
+  padding: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.guidance-panel p {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  font-style: italic;
+  line-height: 1.6;
+  color: #add8e6;
+}
+
+.return-btn {
+  margin-top: 40px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 30px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.return-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Shimmer Effect for Active Step */
+.shimmer-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.shimmer-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  border-radius: 50%;
+}

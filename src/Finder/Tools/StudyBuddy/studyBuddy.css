@@ -1,0 +1,112 @@
+.study-buddy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.study-buddy-header {
+  padding: 20px;
+  background: rgba(173, 216, 230, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.luna-sparkle {
+  color: #add8e6;
+}
+
+.chat-viewport {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.chat-bubble.luna {
+  align-self: flex-start;
+  background: rgba(173, 216, 230, 0.1);
+  color: #add8e6;
+  border-bottom-left-radius: 2px;
+}
+
+.chat-bubble.user {
+  align-self: flex-end;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border-bottom-right-radius: 2px;
+}
+
+.chat-actions {
+  display: flex;
+  gap: 10px;
+  padding: 0 20px 15px;
+}
+
+.chat-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 99px;
+  color: #add8e6;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chat-action-btn:hover {
+  background: rgba(173, 216, 230, 0.1);
+  border-color: #add8e6;
+}
+
+.chat-input-area {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input-area input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 15px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.chat-input-area button {
+  background: #add8e6;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chat-input-area button:hover {
+  background: #fff;
+  box-shadow: 0 0 15px rgba(173, 216, 230, 0.4);
+}

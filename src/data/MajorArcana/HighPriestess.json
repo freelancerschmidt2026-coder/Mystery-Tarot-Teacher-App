@@ -1,0 +1,10 @@
+{
+  "name": "The High Priestess",
+  "number": 2,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Intuition, inner knowing, mystery, sacred silence.",
+  "reversedMeaning": "Blocked intuition, secrets, ignoring inner voice.",
+  "symbols": ["pillars", "moon", "veil", "scroll"],
+  "emotionalTone": "Quiet, deep, mysterious",
+  "keywords": ["intuition", "mystery", "inner voice", "secrets"]
+}

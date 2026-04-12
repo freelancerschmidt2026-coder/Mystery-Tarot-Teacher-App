@@ -1,0 +1,68 @@
+.lc-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lc-luna-avatar {
+  width: 100px;
+  height: 100px;
+  background: rgba(173, 216, 230, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  border: 2px solid #add8e6;
+  box-shadow: 0 0 30px rgba(173, 216, 230, 0.3);
+}
+
+.lc-sparkle {
+  color: #add8e6;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.lc-message-box {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 40px;
+}
+
+.lc-luna-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.lc-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.lc-option-btn {
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.lc-option-btn:hover {
+  background: rgba(173, 216, 230, 0.1);
+  border-color: #add8e6;
+  transform: translateY(-2px);
+}

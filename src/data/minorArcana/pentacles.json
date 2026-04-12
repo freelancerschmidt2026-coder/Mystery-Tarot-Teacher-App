@@ -1,0 +1,254 @@
+[
+  {
+    "id": "pentacles_01",
+    "name": "Ace of Pentacles",
+    "suit": "Pentacles",
+    "number": 1,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "New opportunities, prosperity, manifestation, abundance.",
+    "reversed": "Lost opportunity, instability, scarcity mindset.",
+    "trainingPrompt": "What new seed of abundance is ready to be planted?"
+  },
+  {
+    "id": "pentacles_02",
+    "name": "Two of Pentacles",
+    "suit": "Pentacles",
+    "number": 2,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 2,
+      "animation": "suit-flight"
+    },
+    "upright": "Balance, adaptability, time management, juggling priorities.",
+    "reversed": "Overwhelm, disorganization, imbalance.",
+    "trainingPrompt": "Where are you being asked to rebalance your energy?"
+  },
+  {
+    "id": "pentacles_03",
+    "name": "Three of Pentacles",
+    "suit": "Pentacles",
+    "number": 3,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 3,
+      "animation": "suit-flight"
+    },
+    "upright": "Teamwork, collaboration, skill development.",
+    "reversed": "Misalignment, poor teamwork, lack of growth.",
+    "trainingPrompt": "Where could collaboration elevate your work?"
+  },
+  {
+    "id": "pentacles_04",
+    "name": "Four of Pentacles",
+    "suit": "Pentacles",
+    "number": 4,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 4,
+      "animation": "suit-flight"
+    },
+    "upright": "Security, stability, saving, boundaries.",
+    "reversed": "Greed, fear of loss, over‑control.",
+    "trainingPrompt": "Where are you holding on too tightly?"
+  },
+  {
+    "id": "pentacles_05",
+    "name": "Five of Pentacles",
+    "suit": "Pentacles",
+    "number": 5,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 5,
+      "animation": "suit-flight"
+    },
+    "upright": "Hardship, financial struggle, feeling left out.",
+    "reversed": "Recovery, hope, improvement.",
+    "trainingPrompt": "Where is support available that you haven’t reached for yet?"
+  },
+  {
+    "id": "pentacles_06",
+    "name": "Six of Pentacles",
+    "suit": "Pentacles",
+    "number": 6,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 6,
+      "animation": "suit-flight"
+    },
+    "upright": "Generosity, giving and receiving, balance.",
+    "reversed": "Strings attached, inequality, debt.",
+    "trainingPrompt": "Where can generosity restore balance in your life?"
+  },
+  {
+    "id": "pentacles_07",
+    "name": "Seven of Pentacles",
+    "suit": "Pentacles",
+    "number": 7,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 7,
+      "animation": "suit-flight"
+    },
+    "upright": "Patience, long‑term vision, investment, growth.",
+    "reversed": "Impatience, wasted effort, lack of reward.",
+    "trainingPrompt": "What long‑term investment is beginning to show results?"
+  },
+  {
+    "id": "pentacles_08",
+    "name": "Eight of Pentacles",
+    "suit": "Pentacles",
+    "number": 8,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 8,
+      "animation": "suit-flight"
+    },
+    "upright": "Skill mastery, dedication, craftsmanship.",
+    "reversed": "Burnout, lack of focus, low quality work.",
+    "trainingPrompt": "What skill are you refining with dedication?"
+  },
+  {
+    "id": "pentacles_09",
+    "name": "Nine of Pentacles",
+    "suit": "Pentacles",
+    "number": 9,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 9,
+      "animation": "suit-flight"
+    },
+    "upright": "Independence, luxury, self‑sufficiency, success.",
+    "reversed": "Overwork, superficial success, financial dependence.",
+    "trainingPrompt": "Where can you celebrate your self‑made achievements?"
+  },
+  {
+    "id": "pentacles_10",
+    "name": "Ten of Pentacles",
+    "suit": "Pentacles",
+    "number": 10,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 10,
+      "animation": "suit-flight"
+    },
+    "upright": "Legacy, wealth, family, long‑term stability.",
+    "reversed": "Financial instability, family conflict, short‑term focus.",
+    "trainingPrompt": "What legacy are you building for your future self?"
+  },
+  {
+    "id": "pentacles_11",
+    "name": "Page of Pentacles",
+    "suit": "Pentacles",
+    "number": 11,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Ambition, learning, new opportunities, grounded beginnings.",
+    "reversed": "Lack of progress, procrastination, immaturity.",
+    "trainingPrompt": "What practical step can you take toward your goals?"
+  },
+  {
+    "id": "pentacles_12",
+    "name": "Knight of Pentacles",
+    "suit": "Pentacles",
+    "number": 12,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Hard work, responsibility, routine, reliability.",
+    "reversed": "Stagnation, boredom, lack of motivation.",
+    "trainingPrompt": "Where is steady, consistent effort needed?"
+  },
+  {
+    "id": "pentacles_13",
+    "name": "Queen of Pentacles",
+    "suit": "Pentacles",
+    "number": 13,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Nurturing, practicality, abundance, groundedness.",
+    "reversed": "Imbalance, overgiving, work‑life tension.",
+    "trainingPrompt": "Where can you nurture your environment or yourself?"
+  },
+  {
+    "id": "pentacles_14",
+    "name": "King of Pentacles",
+    "suit": "Pentacles",
+    "number": 14,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "pentacle",
+        "path": "/assets/suit-symbols/pentacle.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Wealth, leadership, stability, mastery.",
+    "reversed": "Greed, stubbornness, financial imbalance.",
+    "trainingPrompt": "Where can you lead with grounded confidence and wisdom?"
+  }
+]

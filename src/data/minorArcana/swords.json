@@ -1,0 +1,254 @@
+[
+  {
+    "id": "swords_01",
+    "name": "Ace of Swords",
+    "suit": "Swords",
+    "number": 1,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Breakthrough, clarity, truth, new ideas.",
+    "reversed": "Confusion, misinformation, mental blocks.",
+    "trainingPrompt": "What truth is ready to cut through the noise for you?"
+  },
+  {
+    "id": "swords_02",
+    "name": "Two of Swords",
+    "suit": "Swords",
+    "number": 2,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 2,
+      "animation": "suit-flight"
+    },
+    "upright": "Stalemate, difficult choices, indecision.",
+    "reversed": "Clarity, emotional release, decision made.",
+    "trainingPrompt": "What decision have you been avoiding?"
+  },
+  {
+    "id": "swords_03",
+    "name": "Three of Swords",
+    "suit": "Swords",
+    "number": 3,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 3,
+      "animation": "suit-flight"
+    },
+    "upright": "Heartbreak, sorrow, emotional pain.",
+    "reversed": "Healing, forgiveness, recovery.",
+    "trainingPrompt": "What pain is ready to be acknowledged and released?"
+  },
+  {
+    "id": "swords_04",
+    "name": "Four of Swords",
+    "suit": "Swords",
+    "number": 4,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 4,
+      "animation": "suit-flight"
+    },
+    "upright": "Rest, recovery, contemplation, retreat.",
+    "reversed": "Restlessness, burnout, mental overload.",
+    "trainingPrompt": "Where do you need rest to regain clarity?"
+  },
+  {
+    "id": "swords_05",
+    "name": "Five of Swords",
+    "suit": "Swords",
+    "number": 5,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 5,
+      "animation": "suit-flight"
+    },
+    "upright": "Conflict, tension, winning at a cost.",
+    "reversed": "Resolution, reconciliation, moving on.",
+    "trainingPrompt": "Where might winning not be worth the cost?"
+  },
+  {
+    "id": "swords_06",
+    "name": "Six of Swords",
+    "suit": "Swords",
+    "number": 6,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 6,
+      "animation": "suit-flight"
+    },
+    "upright": "Transition, moving forward, healing journey.",
+    "reversed": "Resistance to change, unfinished business.",
+    "trainingPrompt": "What transition is guiding you toward calmer waters?"
+  },
+  {
+    "id": "swords_07",
+    "name": "Seven of Swords",
+    "suit": "Swords",
+    "number": 7,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 7,
+      "animation": "suit-flight"
+    },
+    "upright": "Strategy, deception, stealth, cleverness.",
+    "reversed": "Truth revealed, consequences, coming clean.",
+    "trainingPrompt": "Where is a more honest approach needed?"
+  },
+  {
+    "id": "swords_08",
+    "name": "Eight of Swords",
+    "suit": "Swords",
+    "number": 8,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 8,
+      "animation": "suit-flight"
+    },
+    "upright": "Restriction, fear, feeling trapped.",
+    "reversed": "Liberation, new perspective, empowerment.",
+    "trainingPrompt": "What limiting belief is ready to be released?"
+  },
+  {
+    "id": "swords_09",
+    "name": "Nine of Swords",
+    "suit": "Swords",
+    "number": 9,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 9,
+      "animation": "suit-flight"
+    },
+    "upright": "Anxiety, worry, sleepless nights.",
+    "reversed": "Relief, hope, recovery.",
+    "trainingPrompt": "What fear has been taking up too much space in your mind?"
+  },
+  {
+    "id": "swords_10",
+    "name": "Ten of Swords",
+    "suit": "Swords",
+    "number": 10,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 10,
+      "animation": "suit-flight"
+    },
+    "upright": "Endings, collapse, rock bottom, release.",
+    "reversed": "Recovery, regeneration, new beginnings.",
+    "trainingPrompt": "What painful cycle is finally ready to end?"
+  },
+  {
+    "id": "swords_11",
+    "name": "Page of Swords",
+    "suit": "Swords",
+    "number": 11,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Curiosity, new ideas, vigilance, communication.",
+    "reversed": "Gossip, defensiveness, misinformation.",
+    "trainingPrompt": "What new idea is asking for your attention?"
+  },
+  {
+    "id": "swords_12",
+    "name": "Knight of Swords",
+    "suit": "Swords",
+    "number": 12,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Ambition, action, determination, speed.",
+    "reversed": "Impulsiveness, scattered energy, impatience.",
+    "trainingPrompt": "Where is decisive action needed now?"
+  },
+  {
+    "id": "swords_13",
+    "name": "Queen of Swords",
+    "suit": "Swords",
+    "number": 13,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Clarity, independence, truth, intellect.",
+    "reversed": "Coldness, criticism, emotional distance.",
+    "trainingPrompt": "Where can you speak your truth with clarity and compassion?"
+  },
+  {
+    "id": "swords_14",
+    "name": "King of Swords",
+    "suit": "Swords",
+    "number": 14,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "sword",
+        "path": "/assets/suit-symbols/sword.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Authority, logic, discipline, truth.",
+    "reversed": "Manipulation, misuse of power, rigidity.",
+    "trainingPrompt": "Where is clear, logical leadership needed in your life?"
+  }
+]

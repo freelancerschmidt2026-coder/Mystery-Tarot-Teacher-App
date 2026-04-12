@@ -1,0 +1,63 @@
+.cdm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cdm-card-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+}
+
+.cdm-card-preview img {
+  width: 200px;
+  height: 333px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.cdm-description {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  text-align: center;
+  color: #add8e6;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.cdm-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+.cdm-option-btn {
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cdm-option-btn:hover {
+  background: rgba(173, 216, 230, 0.1);
+  border-color: #add8e6;
+  transform: translateY(-2px);
+}

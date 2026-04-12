@@ -1,0 +1,254 @@
+[
+  {
+    "id": "cups_01",
+    "name": "Ace of Cups",
+    "suit": "Cups",
+    "number": 1,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Emotional renewal, love, intuition, spiritual connection.",
+    "reversed": "Emotional block, repression, emptiness.",
+    "trainingPrompt": "What new emotional opening is trying to flow into your life?"
+  },
+  {
+    "id": "cups_02",
+    "name": "Two of Cups",
+    "suit": "Cups",
+    "number": 2,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 2,
+      "animation": "suit-flight"
+    },
+    "upright": "Partnership, harmony, mutual attraction, unity.",
+    "reversed": "Imbalance, tension, miscommunication.",
+    "trainingPrompt": "Where is a relationship asking for deeper harmony?"
+  },
+  {
+    "id": "cups_03",
+    "name": "Three of Cups",
+    "suit": "Cups",
+    "number": 3,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 3,
+      "animation": "suit-flight"
+    },
+    "upright": "Friendship, celebration, community, joy.",
+    "reversed": "Overindulgence, isolation, gossip.",
+    "trainingPrompt": "What joyful connection deserves more space in your life?"
+  },
+  {
+    "id": "cups_04",
+    "name": "Four of Cups",
+    "suit": "Cups",
+    "number": 4,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 4,
+      "animation": "suit-flight"
+    },
+    "upright": "Contemplation, reevaluation, emotional withdrawal.",
+    "reversed": "New opportunities, renewed interest, awareness.",
+    "trainingPrompt": "What opportunity might you be overlooking?"
+  },
+  {
+    "id": "cups_05",
+    "name": "Five of Cups",
+    "suit": "Cups",
+    "number": 5,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 5,
+      "animation": "suit-flight"
+    },
+    "upright": "Loss, grief, disappointment, regret.",
+    "reversed": "Acceptance, healing, moving forward.",
+    "trainingPrompt": "What emotional weight are you finally ready to release?"
+  },
+  {
+    "id": "cups_06",
+    "name": "Six of Cups",
+    "suit": "Cups",
+    "number": 6,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 6,
+      "animation": "suit-flight"
+    },
+    "upright": "Nostalgia, innocence, memories, kindness.",
+    "reversed": "Stuck in the past, moving on, growing up.",
+    "trainingPrompt": "What memory brings you comfort and what does it teach you now?"
+  },
+  {
+    "id": "cups_07",
+    "name": "Seven of Cups",
+    "suit": "Cups",
+    "number": 7,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 7,
+      "animation": "suit-flight"
+    },
+    "upright": "Choices, imagination, illusion, possibilities.",
+    "reversed": "Clarity, focus, decisive action.",
+    "trainingPrompt": "Which option aligns most with your true values?"
+  },
+  {
+    "id": "cups_08",
+    "name": "Eight of Cups",
+    "suit": "Cups",
+    "number": 8,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 8,
+      "animation": "suit-flight"
+    },
+    "upright": "Walking away, deeper purpose, emotional maturity.",
+    "reversed": "Fear of change, stagnation, avoidance.",
+    "trainingPrompt": "What are you being called to leave behind for your growth?"
+  },
+  {
+    "id": "cups_09",
+    "name": "Nine of Cups",
+    "suit": "Cups",
+    "number": 9,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 9,
+      "animation": "suit-flight"
+    },
+    "upright": "Contentment, satisfaction, emotional fulfillment.",
+    "reversed": "Discontent, superficial fulfillment, unmet desires.",
+    "trainingPrompt": "What desire of yours is closer to fulfillment than you realize?"
+  },
+  {
+    "id": "cups_10",
+    "name": "Ten of Cups",
+    "suit": "Cups",
+    "number": 10,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 10,
+      "animation": "suit-flight"
+    },
+    "upright": "Harmony, emotional completion, family, joy.",
+    "reversed": "Disconnection, misalignment, strained relationships.",
+    "trainingPrompt": "What does emotional fulfillment look like for you right now?"
+  },
+  {
+    "id": "cups_11",
+    "name": "Page of Cups",
+    "suit": "Cups",
+    "number": 11,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Creativity, intuition, curiosity, emotional openness.",
+    "reversed": "Emotional immaturity, insecurity, creative block.",
+    "trainingPrompt": "What intuitive message is trying to reach you?"
+  },
+  {
+    "id": "cups_12",
+    "name": "Knight of Cups",
+    "suit": "Cups",
+    "number": 12,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Romance, idealism, charm, imagination.",
+    "reversed": "Disappointment, moodiness, unrealistic expectations.",
+    "trainingPrompt": "Where is your heart leading you next?"
+  },
+  {
+    "id": "cups_13",
+    "name": "Queen of Cups",
+    "suit": "Cups",
+    "number": 13,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Compassion, intuition, emotional depth, nurturing.",
+    "reversed": "Emotional overwhelm, insecurity, codependency.",
+    "trainingPrompt": "Where can you offer yourself more compassion?"
+  },
+  {
+    "id": "cups_14",
+    "name": "King of Cups",
+    "suit": "Cups",
+    "number": 14,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "cup",
+        "path": "/assets/suit-symbols/cup.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Emotional balance, wisdom, diplomacy, mastery.",
+    "reversed": "Emotional manipulation, volatility, repression.",
+    "trainingPrompt": "Where can you lead with emotional wisdom?"
+  }
+]

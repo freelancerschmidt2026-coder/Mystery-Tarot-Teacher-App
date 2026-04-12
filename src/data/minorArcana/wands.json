@@ -1,0 +1,254 @@
+[
+  {
+    "id": "wands_01",
+    "name": "Ace of Wands",
+    "suit": "Wands",
+    "number": 1,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "New beginnings, inspiration, creative spark, potential.",
+    "reversed": "Delays, lack of direction, blocked creativity.",
+    "trainingPrompt": "What new spark or opportunity is trying to emerge for you?"
+  },
+  {
+    "id": "wands_02",
+    "name": "Two of Wands",
+    "suit": "Wands",
+    "number": 2,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 2,
+      "animation": "suit-flight"
+    },
+    "upright": "Planning, decisions, future vision, taking the first steps.",
+    "reversed": "Fear of change, playing it safe, hesitation.",
+    "trainingPrompt": "Where are you being asked to step beyond your comfort zone?"
+  },
+  {
+    "id": "wands_03",
+    "name": "Three of Wands",
+    "suit": "Wands",
+    "number": 3,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 3,
+      "animation": "suit-flight"
+    },
+    "upright": "Expansion, progress, foresight, momentum.",
+    "reversed": "Delays, frustration, limited growth.",
+    "trainingPrompt": "What progress have you made that deserves recognition?"
+  },
+  {
+    "id": "wands_04",
+    "name": "Four of Wands",
+    "suit": "Wands",
+    "number": 4,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 4,
+      "animation": "suit-flight"
+    },
+    "upright": "Celebration, harmony, homecoming, stability.",
+    "reversed": "Tension, instability, delayed celebration.",
+    "trainingPrompt": "What recent win deserves to be celebrated?"
+  },
+  {
+    "id": "wands_05",
+    "name": "Five of Wands",
+    "suit": "Wands",
+    "number": 5,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 5,
+      "animation": "suit-flight"
+    },
+    "upright": "Conflict, competition, tension, disagreements.",
+    "reversed": "Resolution, cooperation, avoiding conflict.",
+    "trainingPrompt": "Where is competition pushing you to grow?"
+  },
+  {
+    "id": "wands_06",
+    "name": "Six of Wands",
+    "suit": "Wands",
+    "number": 6,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 6,
+      "animation": "suit-flight"
+    },
+    "upright": "Victory, recognition, success, achievement.",
+    "reversed": "Self-doubt, lack of recognition, fall from grace.",
+    "trainingPrompt": "Where have you earned recognition that you haven’t claimed yet?"
+  },
+  {
+    "id": "wands_07",
+    "name": "Seven of Wands",
+    "suit": "Wands",
+    "number": 7,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 7,
+      "animation": "suit-flight"
+    },
+    "upright": "Defense, perseverance, standing your ground.",
+    "reversed": "Overwhelm, giving up, feeling defeated.",
+    "trainingPrompt": "What is worth defending right now?"
+  },
+  {
+    "id": "wands_08",
+    "name": "Eight of Wands",
+    "suit": "Wands",
+    "number": 8,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 8,
+      "animation": "suit-flight"
+    },
+    "upright": "Speed, movement, progress, swift change.",
+    "reversed": "Delays, frustration, slow movement.",
+    "trainingPrompt": "Where is momentum building in your life?"
+  },
+  {
+    "id": "wands_09",
+    "name": "Nine of Wands",
+    "suit": "Wands",
+    "number": 9,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 9,
+      "animation": "suit-flight"
+    },
+    "upright": "Resilience, persistence, boundaries, last stand.",
+    "reversed": "Burnout, exhaustion, giving up.",
+    "trainingPrompt": "Where do you need to protect your energy?"
+  },
+  {
+    "id": "wands_10",
+    "name": "Ten of Wands",
+    "suit": "Wands",
+    "number": 10,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 10,
+      "animation": "suit-flight"
+    },
+    "upright": "Burden, responsibility, hard work, stress.",
+    "reversed": "Release, delegation, letting go.",
+    "trainingPrompt": "What burden are you carrying that you can set down?"
+  },
+  {
+    "id": "wands_11",
+    "name": "Page of Wands",
+    "suit": "Wands",
+    "number": 11,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Enthusiasm, exploration, discovery, inspiration.",
+    "reversed": "Lack of direction, procrastination, setbacks.",
+    "trainingPrompt": "What new idea is asking you to explore it?"
+  },
+  {
+    "id": "wands_12",
+    "name": "Knight of Wands",
+    "suit": "Wands",
+    "number": 12,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Action, adventure, passion, impulsiveness.",
+    "reversed": "Recklessness, delays, scattered energy.",
+    "trainingPrompt": "Where is bold action needed?"
+  },
+  {
+    "id": "wands_13",
+    "name": "Queen of Wands",
+    "suit": "Wands",
+    "number": 13,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Confidence, independence, determination, charisma.",
+    "reversed": "Insecurity, jealousy, introversion.",
+    "trainingPrompt": "Where can you embody more confidence and warmth?"
+  },
+  {
+    "id": "wands_14",
+    "name": "King of Wands",
+    "suit": "Wands",
+    "number": 14,
+    "suitDesign": {
+      "symbol": {
+        "type": "svg",
+        "name": "wand",
+        "path": "/assets/suit-symbols/wand.svg"
+      },
+      "count": 1,
+      "animation": "suit-flight"
+    },
+    "upright": "Leadership, vision, mastery, boldness.",
+    "reversed": "Impulsiveness, arrogance, lack of direction.",
+    "trainingPrompt": "Where are you being called to lead with vision?"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "name": "The Emperor",
+  "number": 4,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Structure, authority, leadership, stability, protection.",
+  "reversedMeaning": "Control issues, rigidity, domination, lack of discipline.",
+  "symbols": ["throne", "armor", "mountains", "scepter"],
+  "emotionalTone": "Grounded, firm, commanding",
+  "keywords": ["authority", "structure", "order", "protection"]
+}

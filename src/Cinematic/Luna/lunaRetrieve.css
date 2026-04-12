@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+.luna-retrieve-container {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.luna-wrapper {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+.luna-body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.luna-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 15px rgba(173, 216, 230, 0.4));
+}
+
+.luna-trail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(173, 216, 230, 0.3) 0%, transparent 70%);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.scroll-sprite {
+  width: 60px;
+  height: 90px;
+  background-color: #f5e6c4;
+  border: 1px solid #8b4513;
+  position: absolute;
+  z-index: 15;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  will-change: transform, opacity;
+}

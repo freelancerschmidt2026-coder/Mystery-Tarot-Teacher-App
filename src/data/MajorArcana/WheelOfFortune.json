@@ -1,0 +1,10 @@
+{
+  "name": "Wheel of Fortune",
+  "number": 10,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Cycles, fate, turning points, change in motion.",
+  "reversedMeaning": "Resistance to change, bad luck, feeling stuck in a cycle.",
+  "symbols": ["wheel", "creatures at corners", "sphinx", "snake"],
+  "emotionalTone": "Unstable, shifting, fated",
+  "keywords": ["change", "cycle", "destiny", "turning point"]
+}

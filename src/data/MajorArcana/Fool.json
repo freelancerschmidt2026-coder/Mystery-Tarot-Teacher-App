@@ -1,0 +1,38 @@
+{
+  "id": "major_00_fool",
+  "number": 0,
+  "name": "The Fool",
+  "arcana": "major",
+  "upright": {
+    "world": "Short description of the cinematic world",
+    "mechanic": "Name of the core interactive mechanic",
+    "prompt": "Exact user-facing question Luna asks",
+    "experienceSummary": "1–3 sentence summary of what happens in this mode",
+    "reward": {
+      "type": "charm|feature_unlock|page_unlock|badge",
+      "name": "Name of the reward",
+      "description": "Short description of what it represents or does"
+    },
+    "featureUnlock": {
+      "enabled": true,
+      "name": "Name of feature (if any)",
+      "description": "What this feature does in the app"
+    }
+  },
+  "reversed": {
+    "world": "Short description of the reversed world",
+    "mechanic": "Name of the reversed mechanic",
+    "prompt": "Exact user-facing question Luna asks",
+    "experienceSummary": "1–3 sentence summary of what happens in this mode",
+    "reward": {
+      "type": "charm|feature_unlock|page_unlock|badge|free_reading",
+      "name": "Name of the reward",
+      "description": "Short description of what it represents or does"
+    },
+    "featureUnlock": {
+      "enabled": true,
+      "name": "Name of feature (if any)",
+      "description": "What this feature does in the app"
+    }
+  }
+}

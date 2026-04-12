@@ -1,0 +1,10 @@
+{
+  "name": "The Star",
+  "number": 17,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Hope, renewal, inspiration, spiritual clarity.",
+  "reversedMeaning": "Doubt, discouragement, loss of faith.",
+  "symbols": ["water jugs", "stars", "bird", "pool"],
+  "emotionalTone": "Gentle, hopeful, luminous",
+  "keywords": ["hope", "healing", "guidance", "renewal"]
+}

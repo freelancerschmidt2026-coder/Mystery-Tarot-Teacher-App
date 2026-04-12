@@ -1,0 +1,10 @@
+{
+  "name": "Death",
+  "number": 13,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Transformation, endings, rebirth, clearing the old.",
+  "reversedMeaning": "Resistance to change, fear of endings, stagnation.",
+  "symbols": ["white rose", "horse", "sunrise", "river"],
+  "emotionalTone": "Inevitable, cleansing, transformative",
+  "keywords": ["ending", "rebirth", "change", "transition"]
+}

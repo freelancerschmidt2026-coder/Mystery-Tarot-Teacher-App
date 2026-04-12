@@ -1,0 +1,50 @@
+.em-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.em-card-display {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 40px;
+}
+
+.em-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.em-prompt {
+  font-size: 16px;
+  color: #add8e6;
+  opacity: 0.8;
+}
+
+.em-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.em-option-btn {
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.em-option-btn:hover {
+  background: rgba(173, 216, 230, 0.1);
+  border-color: #add8e6;
+  transform: translateY(-2px);
+}

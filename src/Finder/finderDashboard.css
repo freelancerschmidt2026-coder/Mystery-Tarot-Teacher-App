@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+.finder-dashboard-container {
+  background-color: #000;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.finder-top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.finder-logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #add8e6;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.4);
+}
+
+.finder-logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.finder-logout-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: #fff;
+}
+
+.finder-main-content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.finder-welcome-screen {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.welcome-message h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.welcome-message p {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.finder-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.finder-tool-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(173, 216, 230, 0.2);
+  padding: 40px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: #add8e6;
+}
+
+.finder-tool-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #add8e6;
+  box-shadow: 0 0 30px rgba(173, 216, 230, 0.4);
+}
+
+.tool-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(173, 216, 230, 0.1);
+  border-radius: 50%;
+  border: 1px solid rgba(173, 216, 230, 0.3);
+}
+
+.tool-name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.finder-tool-btn.journey-tile {
+  grid-column: span 2;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(173, 216, 230, 0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.journey-tile .tool-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.journey-tile .tool-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.finder-tool-view {
+  position: relative;
+}
+
+.back-to-dashboard {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background: transparent;
+  border: none;
+  color: #add8e6;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-dashboard:hover {
+  opacity: 1;
+}

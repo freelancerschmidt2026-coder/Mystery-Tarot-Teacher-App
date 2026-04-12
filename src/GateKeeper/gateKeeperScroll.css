@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+.gatekeeper-scroll-container {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  perspective: 1500px;
+}
+
+.gatekeeper-parchment {
+  width: 460px;
+  height: 680px;
+  background-color: #d7c4a3; /* Darker, more ancient parchment */
+  border-radius: 4px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.9);
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #5d4037;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.gatekeeper-parchment.weathered {
+  filter: grayscale(0.6) contrast(0.7) sepia(0.3);
+  opacity: 0.6;
+  clip-path: polygon(
+    0% 10%, 10% 0%, 90% 0%, 100% 10%, 
+    100% 90%, 90% 100%, 10% 100%, 0% 90%,
+    5% 50%, 0% 30%, 3% 70%
+  );
+}
+
+.gatekeeper-parchment.stabilized {
+  filter: grayscale(0) contrast(1.3) sepia(0);
+  opacity: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: 0 0 100px rgba(173, 216, 230, 0.3);
+  border-color: #add8e6;
+}
+
+.gatekeeper-parchment.dissolving {
+  filter: blur(20px) brightness(3);
+  opacity: 0;
+  transform: translateY(-1000px) scale(0.2) rotateY(45deg);
+}
+
+.gatekeeper-texture {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.gatekeeper-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #2d1b0d;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 2;
+  transition: color 0.5s ease;
+}
+
+.gatekeeper-parchment.stabilized .gatekeeper-title {
+  color: #0d0d14;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.5);
+}
+
+.gatekeeper-input-group {
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.gatekeeper-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(45, 27, 13, 0.6);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.gatekeeper-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(45, 27, 13, 0.3);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: #2d1b0d;
+  width: 100%;
+  outline: none;
+  padding: 8px 0;
+  transition: all 0.5s ease;
+}
+
+.gatekeeper-input:focus {
+  border-bottom-color: #add8e6;
+}
+
+.gatekeeper-ink-glow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #add8e6;
+  box-shadow: 0 0 15px #add8e6;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.gatekeeper-input:not(:placeholder-shown) + .gatekeeper-ink-glow {
+  transform: scaleX(1);
+}
+
+.gatekeeper-submit-btn {
+  margin-top: 40px;
+  padding: 14px 40px;
+  background-color: #0d0d14;
+  color: #add8e6;
+  border: 1px solid #add8e6;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.2);
+}
+
+.gatekeeper-submit-btn:hover {
+  background-color: #add8e6;
+  color: #0d0d14;
+  box-shadow: 0 0 40px rgba(173, 216, 230, 0.5);
+}
+
+.silver-dust-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.silver-dust {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #add8e6;
+  will-change: transform, opacity;
+}
+
+.gatekeeper-sigil-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
+}

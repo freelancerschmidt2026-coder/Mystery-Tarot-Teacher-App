@@ -1,0 +1,205 @@
+.course-syllabus-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.back-to-overview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #add8e6;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.back-to-overview:hover {
+  opacity: 1;
+}
+
+.syllabus-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.syllabus-header h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  color: #add8e6;
+  text-shadow: 0 0 20px rgba(173, 216, 230, 0.3);
+}
+
+.syllabus-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.syllabus-section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.syllabus-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  color: #add8e6;
+}
+
+.syllabus-section p {
+  line-height: 1.6;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+.syllabus-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.syllabus-section ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.syllabus-section ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #add8e6;
+}
+
+.lessons-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.lesson-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 2px solid #add8e6;
+}
+
+.lesson-num {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
+}
+
+.lesson-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.worksheet-item {
+  border-left-color: #fbbf24;
+}
+
+.worksheet-item .lesson-num {
+  color: #fbbf24;
+  opacity: 0.8;
+}
+
+.arcade-launch-btn {
+  width: 100%;
+  padding: 12px;
+  background: rgba(173, 216, 230, 0.1);
+  border: 1px solid rgba(173, 216, 230, 0.3);
+  border-radius: 8px;
+  color: #add8e6;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arcade-launch-btn:hover {
+  background: #add8e6;
+  color: #000;
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.4);
+}
+
+.syllabus-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .syllabus-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.keyword-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.keyword-tag {
+  padding: 6px 12px;
+  background: rgba(173, 216, 230, 0.1);
+  border: 1px solid rgba(173, 216, 230, 0.2);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #add8e6;
+}
+
+.badge-section {
+  background: linear-gradient(135deg, rgba(173, 216, 230, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  border: 1px solid rgba(173, 216, 230, 0.3);
+}
+
+.badge-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.badge-icon {
+  color: #add8e6;
+  filter: drop-shadow(0 0 10px rgba(173, 216, 230, 0.5));
+}
+
+.badge-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.badge-info p {
+  font-size: 1rem;
+  opacity: 0.6;
+  font-style: italic;
+}

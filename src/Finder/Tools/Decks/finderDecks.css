@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+.finder-decks-container {
+  padding: 40px;
+  background-color: #050505;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.finder-decks-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.finder-decks-header h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.finder-decks-actions {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.create-deck-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 9999px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-deck-btn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.empty-decks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.decks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.finder-deck-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.finder-deck-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.deck-card-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(173, 216, 230, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.deck-card-num {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.deck-card-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.deck-card-desc {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.deck-preview-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #add8e6;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.deck-preview-btn:hover {
+  background: rgba(173, 216, 230, 0.1);
+  border-color: #add8e6;
+  box-shadow: 0 0 15px rgba(173, 216, 230, 0.2);
+}
+
+.placeholder-deck-card {
+  width: 300px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}

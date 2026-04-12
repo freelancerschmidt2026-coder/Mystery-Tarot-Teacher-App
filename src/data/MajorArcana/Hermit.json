@@ -1,0 +1,10 @@
+{
+  "name": "The Hermit",
+  "number": 9,
+  "suit": "Major Arcana",
+  "uprightMeaning": "Inner guidance, introspection, solitude, seeking truth.",
+  "reversedMeaning": "Isolation, withdrawal, loneliness, ignoring inner wisdom.",
+  "symbols": ["lantern", "staff", "cloak", "mountain"],
+  "emotionalTone": "Quiet, reflective, solitary",
+  "keywords": ["wisdom", "solitude", "guidance", "searching"]
+}
