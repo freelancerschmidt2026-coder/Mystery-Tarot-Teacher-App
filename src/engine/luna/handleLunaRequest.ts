@@ -1,4 +1,6 @@
 import { canUseLuna, trackLunaUsage, type LunaCategory } from "../../services/billing/lunaUsage";
+import { lunaModelEngine } from "./lunaModelEngine";
+import { getLunaSystemContext } from "./evolution"; // we will add this next
 
 export async function handleLunaRequest(
   userId: string,
@@ -15,13 +17,22 @@ export async function handleLunaRequest(
     };
   }
 
-  // TODO: replace this with your real Luna API call
-  const response = {
-    type: "mock",
-    message: `Luna would respond to: "${prompt}"`
-  };
+  // Get Luna's system context (tone, rituals, rules, escalation logic)
+  const systemContext = await getLunaSystemContext(userId, category);
 
+  // Generate Luna's reply using the hybrid engine
+  const message = await lunaModelEngine.generateLunaReply({
+    userId,
+    category,
+    prompt,
+    systemContext
+  });
+
+  // Track usage AFTER generating the reply
   await trackLunaUsage(userId, category);
 
-  return response;
+  return {
+    type: "luna_reply",
+    message
+  };
 }
