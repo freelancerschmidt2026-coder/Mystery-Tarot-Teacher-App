@@ -1,0 +1,66 @@
+import type { LunaLifeArea, LunaReadingTone, LunaDepthPreference } from "./lunaTypes";
+
+export interface PreReadingAnswer {
+  mainQuestion: string;
+  lifeArea: LunaLifeArea;
+  desiredTone: LunaReadingTone;
+  openToShadowWork: boolean;
+  visualStoryMode: boolean;
+  depthPreference: LunaDepthPreference;
+  allowExtraCards: boolean;
+}
+
+export const preReadingFormDefinition = {
+  fields: [
+    {
+      id: "mainQuestion",
+      label: "What is your main question?",
+      type: "textarea"
+    },
+    {
+      id: "lifeArea",
+      label: "What area of life does this touch?",
+      type: "select",
+      options: [
+        "love",
+        "career",
+        "purpose",
+        "healing",
+        "shadow",
+        "money",
+        "creativity",
+        "family",
+        "self_growth"
+      ] as LunaLifeArea[]
+    },
+    {
+      id: "desiredTone",
+      label: "How do you want this reading to feel?",
+      type: "select",
+      options: ["gentle", "direct", "deep", "practical", "mystical"] as LunaReadingTone[]
+    },
+    {
+      id: "openToShadowWork",
+      label: "Are you open to shadow work?",
+      type: "boolean"
+    },
+    {
+      id: "visualStoryMode",
+      label: "Would you like Visual Story Mode?",
+      type: "boolean",
+      description:
+        "Visual Story Mode brings your reading to life with animated tarot cards and a cinematic story that unfolds as Luna narrates."
+    },
+    {
+      id: "depthPreference",
+      label: "Do you prefer a short, medium, or deep reading?",
+      type: "select",
+      options: ["short", "medium", "deep"] as LunaDepthPreference[]
+    },
+    {
+      id: "allowExtraCards",
+      label: "May Luna pull extra cards if the story isn’t clear yet?",
+      type: "boolean"
+    }
+  ]
+} as const;
