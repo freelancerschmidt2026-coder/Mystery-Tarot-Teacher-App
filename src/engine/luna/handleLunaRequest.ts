@@ -1,6 +1,6 @@
 import { canUseLuna, trackLunaUsage, type LunaCategory } from "../../services/billing/lunaUsage";
 import { lunaModelEngine } from "./lunaModelEngine";
-import { getLunaSystemContext } from "./evolution"; // we will add this next
+import { getLunaSystemContext } from "./evolution";
 
 export async function handleLunaRequest(
   userId: string,
@@ -17,10 +17,8 @@ export async function handleLunaRequest(
     };
   }
 
-  // Get Luna's system context (tone, rituals, rules, escalation logic)
   const systemContext = await getLunaSystemContext(userId, category);
 
-  // Generate Luna's reply using the hybrid engine
   const message = await lunaModelEngine.generateLunaReply({
     userId,
     category,
@@ -28,7 +26,6 @@ export async function handleLunaRequest(
     systemContext
   });
 
-  // Track usage AFTER generating the reply
   await trackLunaUsage(userId, category);
 
   return {
