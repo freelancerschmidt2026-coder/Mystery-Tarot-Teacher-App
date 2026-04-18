@@ -15,7 +15,7 @@ export const NotePadThreshold: React.FC = () => {
   const isOpening = coverAnimationState === "opening";
   const isOpen = coverAnimationState === "open";
 
-  // --- Opening Ritual Logic ---
+  // --- Opening Ritual Logic (Step 5 merged) ---
   useEffect(() => {
     if (coverAnimationState === "opening") {
       const timer = setTimeout(() => {
@@ -26,6 +26,7 @@ export const NotePadThreshold: React.FC = () => {
     }
   }, [coverAnimationState, setCoverAnimationState]);
 
+  // --- Cover Template System (Step 6 merged) ---
   const templateClass =
     coverTemplates.find((t) => t.id === selectedCoverTemplate)?.className ||
     coverTemplates[0].className;
@@ -91,3 +92,4 @@ export const NotePadThreshold: React.FC = () => {
     </div>
   );
 };
+
