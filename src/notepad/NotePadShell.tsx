@@ -9,7 +9,7 @@ import { TemplatePreviewModal } from "./templates/TemplatePreviewModal";
 import { savePurchasedTemplate } from "./templates/savePurchasedTemplate";
 import { applyTemplateToNotepad } from "./templates/applyTemplateToNotepad";
 
-// Example template list (you will replace with Firestore later)
+// Example template list (replace with Firestore later)
 const PREMIUM_TEMPLATES = [
   {
     id: "cosmic_shimmer",
@@ -75,6 +75,7 @@ export const NotePadShell: React.FC<Props> = ({ memberId, onClose }) => {
 
         <ul className="sidebar-list">
           <li className="sidebar-item active">Saved Pages</li>
+
           <li
             className="sidebar-item"
             onClick={() => setShowMarketplace(true)}
