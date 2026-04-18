@@ -1,0 +1,240 @@
+/* ================================
+   NOTE: LUXURY NIGHT-MODE THEME
+   ================================ */
+
+:root {
+  --np-bg: #000000;
+  --np-panel: rgba(20, 20, 20, 0.65);
+  --np-border: rgba(180, 180, 180, 0.35);
+  --np-text: #d6d6d6;
+  --np-accent: #4db8ff;
+  --np-accent-glow: rgba(77, 184, 255, 0.55);
+  --np-chrome: #c0c0c0;
+  --np-gradient: linear-gradient(
+    90deg,
+    #ff00ff,
+    #00eaff,
+    #7b2cff,
+    #ff0099,
+    #00eaff
+  );
+}
+
+/* ================================
+   SHELL LAYOUT
+   ================================ */
+
+.notepad-shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 60px 1fr;
+  height: 100vh;
+  background: var(--np-bg);
+  color: var(--np-text);
+  font-family: "Inter", sans-serif;
+}
+
+/* ================================
+   TOPBAR
+   ================================ */
+
+.notepad-topbar {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  background: var(--np-panel);
+  border-bottom: 1px solid var(--np-border);
+  backdrop-filter: blur(12px);
+}
+
+.notepad-topbar-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--np-chrome);
+  letter-spacing: 0.5px;
+}
+
+.notepad-close-button {
+  background: transparent;
+  border: 1px solid var(--np-border);
+  color: var(--np-text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.notepad-close-button:hover {
+  border-color: var(--np-accent);
+  color: var(--np-accent);
+  box-shadow: 0 0 8px var(--np-accent-glow);
+}
+
+/* ================================
+   SIDEBAR
+   ================================ */
+
+.notepad-sidebar {
+  background: var(--np-panel);
+  border-right: 1px solid var(--np-border);
+  padding: 20px;
+  backdrop-filter: blur(12px);
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--np-chrome);
+  margin-bottom: 12px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: var(--np-text);
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-item.active {
+  background: rgba(255, 255, 255, 0.12);
+  border-left: 3px solid var(--np-accent);
+}
+
+/* ================================
+   MAIN CONTENT
+   ================================ */
+
+.notepad-content {
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* ================================
+   INDEX VIEW
+   ================================ */
+
+.notepad-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  background: var(--np-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientFlow 6s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+.notepad-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notepad-item {
+  margin-bottom: 12px;
+}
+
+.notepad-link {
+  background: var(--np-panel);
+  border: 1px solid var(--np-border);
+  padding: 12px 16px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+  color: var(--np-text);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.notepad-link:hover {
+  border-color: var(--np-accent);
+  box-shadow: 0 0 10px var(--np-accent-glow);
+  color: var(--np-accent);
+}
+
+/* ================================
+   CERTIFICATE PAGE
+   ================================ */
+
+.notepad-certificate-page {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--np-panel);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--np-border);
+  backdrop-filter: blur(12px);
+}
+
+.back-button {
+  background: transparent;
+  border: 1px solid var(--np-border);
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--np-text);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  border-color: var(--np-accent);
+  color: var(--np-accent);
+  box-shadow: 0 0 8px var(--np-accent-glow);
+}
+
+.page-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: var(--np-chrome);
+}
+
+.certificate-box {
+  border: 1px solid var(--np-border);
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(10, 10, 10, 0.55);
+}
+
+.certificate-name {
+  font-size: 1.4rem;
+  color: var(--np-accent);
+  margin-bottom: 10px;
+}
+
+.certificate-detail {
+  margin-bottom: 8px;
+  color: var(--np-text);
+}
+
+.certificate-signatures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.signature-name {
+  font-weight: 600;
+  color: var(--np-chrome);
+}
+
+.signature-role {
+  font-size: 0.85rem;
+  color: var(--np-text);
+}
