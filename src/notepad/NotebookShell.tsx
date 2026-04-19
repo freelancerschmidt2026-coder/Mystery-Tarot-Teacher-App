@@ -2,14 +2,18 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { usePageStore } from "./state/usePageStore";
+
+import { PageTabs } from "./components/PageTabs";
 import { PageNavigation } from "./components/PageNavigation";
 import { PageCreator } from "./components/PageCreator";
 import { PageEditor } from "./components/PageEditor";
+import { VoicePageCreator } from "./components/VoicePageCreator";
 
 import { LunaPageGenerator } from "../engine/luna/pageGenerator";
 import { LunaTarotPageGenerator } from "../engine/luna/tarotPageGenerator";
 
 import { ExportSystem } from "./systems/exportSystem";
+import { ThemeSystem, NotebookThemeId } from "./systems/themeSystem";
 
 export const NotebookShell: React.FC = () => {
   const {
@@ -24,11 +28,15 @@ export const NotebookShell: React.FC = () => {
 
   const currentPage = pages[currentIndex];
 
+  // THEME (static for now — dynamic switching comes next)
+  const theme = ThemeSystem.getTheme("void" as NotebookThemeId);
+
   // Load saved pages on mount
   useEffect(() => {
     loadFromStorage();
   }, [loadFromStorage]);
 
+  // Luna generators
   const generateLunaPage = () => {
     const page = LunaPageGenerator.generate();
     addPage(page);
@@ -42,6 +50,7 @@ export const NotebookShell: React.FC = () => {
     addPage(page);
   };
 
+  // Export
   const exportNotebook = () => {
     const text = ExportSystem.toPlainText(pages);
     ExportSystem.downloadAsFile("mystery-notebook.txt", text);
@@ -49,18 +58,27 @@ export const NotebookShell: React.FC = () => {
 
   return (
     <motion.div
-      className="p-10 text-white max-w-3xl mx-auto"
+      className={`p-10 max-w-3xl mx-auto rounded-xl border ${theme.containerClass}`}
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <h1 className="text-3xl font-bold mb-6">Mystery NotePad</h1>
+      <h1 className={`text-3xl font-bold mb-6 ${theme.accentClass}`}>
+        Mystery NotePad
+      </h1>
 
-      {/* Current Page */}
+      {/* PAGE TABS */}
+      <PageTabs
+        pages={pages}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+      />
+
+      {/* CURRENT PAGE */}
       {currentPage ? (
         <motion.div
           key={currentPage.id}
-          className="p-6 rounded-xl bg-black/60 border border-[#7ffcff]/30 mb-6"
+          className="p-6 rounded-xl bg-black/40 border border-white/10 mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -75,7 +93,7 @@ export const NotebookShell: React.FC = () => {
         <p className="opacity-60">No pages yet. Create one below.</p>
       )}
 
-      {/* Navigation */}
+      {/* NAVIGATION */}
       {pages.length > 0 && (
         <PageNavigation
           pages={pages}
@@ -84,7 +102,7 @@ export const NotebookShell: React.FC = () => {
         />
       )}
 
-      {/* Editor */}
+      {/* EDITOR */}
       {currentPage && (
         <PageEditor
           page={currentPage}
@@ -93,10 +111,13 @@ export const NotebookShell: React.FC = () => {
         />
       )}
 
-      {/* Create Page */}
+      {/* CREATE PAGE */}
       <PageCreator onCreate={addPage} />
 
-      {/* Luna Buttons */}
+      {/* VOICE PAGE CREATOR */}
+      <VoicePageCreator onCreate={addPage} />
+
+      {/* LUNA BUTTONS */}
       <div className="flex gap-4 mt-6">
         <button
           onClick={generateLunaPage}
@@ -113,7 +134,7 @@ export const NotebookShell: React.FC = () => {
         </button>
       </div>
 
-      {/* Export */}
+      {/* EXPORT */}
       <button
         onClick={exportNotebook}
         className="mt-6 px-4 py-2 rounded-md border border-green-400/40 hover:bg-green-400/10"
