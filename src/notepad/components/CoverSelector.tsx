@@ -1,54 +1,30 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useMysteryStore } from "../../state/useMysteryStore";
-import { coverTemplates } from "../templates/coverTemplates";
+import { useThemeStore } from "../state/useThemeStore";
+import { notebookThemes, NotebookThemeId } from "../systems/themeSystem";
 
 export const CoverSelector: React.FC = () => {
-  const selectedCoverTemplate = useMysteryStore(
-    (s) => s.selectedCoverTemplate
-  );
-  const setSelectedCoverTemplate = useMysteryStore(
-    (s) => s.setSelectedCoverTemplate
-  );
+  const { themeId, setTheme } = useThemeStore();
 
   return (
-    <div className="w-full mt-6">
-      <h3 className="text-white text-lg font-semibold mb-3">
-        Choose Your Cover
-      </h3>
+    <div className="mt-6 p-4 rounded-xl bg-black/40 border border-white/10">
+      <h2 className="text-lg font-semibold mb-3">Cover Theme</h2>
 
-      <div className="grid grid-cols-2 gap-4">
-        {coverTemplates.map((template) => {
-          const isSelected = template.id === selectedCoverTemplate;
+      <div className="flex flex-wrap gap-3">
+        {notebookThemes.map((theme) => {
+          const isActive = theme.id === themeId;
 
           return (
-            <motion.button
-              key={template.id}
-              onClick={() => setSelectedCoverTemplate(template.id)}
-              className={`relative rounded-lg p-4 text-left border transition-all ${
-                isSelected
-                  ? "border-[#7ffcff] shadow-[0_0_20px_rgba(127,252,255,0.5)]"
-                  : "border-white/20 hover:border-[#7ffcff]/40"
+            <button
+              key={theme.id}
+              onClick={() => setTheme(theme.id as NotebookThemeId)}
+              className={`px-4 py-2 rounded-md border text-sm ${
+                isActive
+                  ? "border-[#7ffcff] bg-black/60 text-white"
+                  : "border-white/20 text-white/70 hover:bg-black/50"
               }`}
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
             >
-              <div
-                className={`h-20 rounded-md mb-2 ${template.className}`}
-              />
-
-              <p className="text-white text-sm opacity-90">
-                {template.name}
-              </p>
-
-              {isSelected && (
-                <motion.div
-                  className="absolute top-2 right-2 w-3 h-3 rounded-full bg-[#7ffcff]"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                />
-              )}
-            </motion.button>
+              {theme.name}
+            </button>
           );
         })}
       </div>
