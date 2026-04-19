@@ -2,18 +2,20 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { usePageStore } from "./state/usePageStore";
+import { useThemeStore } from "./state/useThemeStore";
 
 import { PageTabs } from "./components/PageTabs";
 import { PageNavigation } from "./components/PageNavigation";
 import { PageCreator } from "./components/PageCreator";
 import { PageEditor } from "./components/PageEditor";
 import { VoicePageCreator } from "./components/VoicePageCreator";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 import { LunaPageGenerator } from "../engine/luna/pageGenerator";
 import { LunaTarotPageGenerator } from "../engine/luna/tarotPageGenerator";
 
 import { ExportSystem } from "./systems/exportSystem";
-import { ThemeSystem, NotebookThemeId } from "./systems/themeSystem";
+import { ThemeSystem } from "./systems/themeSystem";
 
 export const NotebookShell: React.FC = () => {
   const {
@@ -26,17 +28,15 @@ export const NotebookShell: React.FC = () => {
     loadFromStorage,
   } = usePageStore();
 
+  const { themeId } = useThemeStore();
+  const theme = ThemeSystem.getTheme(themeId);
+
   const currentPage = pages[currentIndex];
 
-  // THEME (static for now — dynamic switching comes next)
-  const theme = ThemeSystem.getTheme("void" as NotebookThemeId);
-
-  // Load saved pages on mount
   useEffect(() => {
     loadFromStorage();
   }, [loadFromStorage]);
 
-  // Luna generators
   const generateLunaPage = () => {
     const page = LunaPageGenerator.generate();
     addPage(page);
@@ -50,7 +50,6 @@ export const NotebookShell: React.FC = () => {
     addPage(page);
   };
 
-  // Export
   const exportNotebook = () => {
     const text = ExportSystem.toPlainText(pages);
     ExportSystem.downloadAsFile("mystery-notebook.txt", text);
@@ -67,14 +66,12 @@ export const NotebookShell: React.FC = () => {
         Mystery NotePad
       </h1>
 
-      {/* PAGE TABS */}
       <PageTabs
         pages={pages}
         currentIndex={currentIndex}
         setCurrentIndex={setCurrentIndex}
       />
 
-      {/* CURRENT PAGE */}
       {currentPage ? (
         <motion.div
           key={currentPage.id}
@@ -93,7 +90,6 @@ export const NotebookShell: React.FC = () => {
         <p className="opacity-60">No pages yet. Create one below.</p>
       )}
 
-      {/* NAVIGATION */}
       {pages.length > 0 && (
         <PageNavigation
           pages={pages}
@@ -102,7 +98,6 @@ export const NotebookShell: React.FC = () => {
         />
       )}
 
-      {/* EDITOR */}
       {currentPage && (
         <PageEditor
           page={currentPage}
@@ -111,13 +106,11 @@ export const NotebookShell: React.FC = () => {
         />
       )}
 
-      {/* CREATE PAGE */}
       <PageCreator onCreate={addPage} />
-
-      {/* VOICE PAGE CREATOR */}
       <VoicePageCreator onCreate={addPage} />
 
-      {/* LUNA BUTTONS */}
+      <ThemeSwitcher />
+
       <div className="flex gap-4 mt-6">
         <button
           onClick={generateLunaPage}
@@ -134,7 +127,6 @@ export const NotebookShell: React.FC = () => {
         </button>
       </div>
 
-      {/* EXPORT */}
       <button
         onClick={exportNotebook}
         className="mt-6 px-4 py-2 rounded-md border border-green-400/40 hover:bg-green-400/10"
