@@ -1,0 +1,75 @@
+flowchart TD
+
+  subgraph FOUNDATION
+    PathSanitizationEngine
+    SafeNameEngine
+    StorageKeyValidator
+    IdNormalizationEngine
+    FileIntegrityEngine
+  end
+
+  subgraph CORE_STUDIO
+    StudioDeckEngine
+    TarotBoxEngine
+    CardFlipEngine
+    CardArtEngine
+    TemplateApplicationEngine
+    TemplateRotationEngine
+    TemplateVariantEngine
+    TemplateMetadataEngine
+    DeckBoxAnimationEngine
+    DeckProgressEngine
+    StudioUndoRedoEngine
+    StudioAutosaveEngine
+    StudioEventEngine
+    VoiceCommandEngine
+  end
+
+  subgraph INTELLIGENCE
+    EmotionEngine
+    SuggestionEngine
+    CreativeDirectionEngine
+    CardMeaningAnalysisEngine
+    DeckConsistencyEngine
+    DesignSessionEngine
+    ThemeEngine
+  end
+
+  subgraph ECONOMY
+    MysteryTokenEngine
+    MemberEconomyLedgerEngine
+  end
+
+  subgraph STORE
+    StoreListingEngine
+    MysteryDeckApprovalEngine
+    TemplatePricingEngine
+  end
+
+  subgraph NOTEPAD
+    NotepadIntegrationEngine
+  end
+
+  subgraph EXPORT
+    DeckExportEngine
+  end
+
+  subgraph BREAKOUT
+    BreakoutRoomEngine
+  end
+
+  FOUNDATION --> CORE_STUDIO
+  FOUNDATION --> INTELLIGENCE
+  FOUNDATION --> ECONOMY
+  FOUNDATION --> STORE
+  FOUNDATION --> NOTEPAD
+  FOUNDATION --> EXPORT
+  FOUNDATION --> BREAKOUT
+
+  CORE_STUDIO --> INTELLIGENCE
+  CORE_STUDIO --> NOTEPAD
+  CORE_STUDIO --> EXPORT
+  CORE_STUDIO --> STORE
+
+  INTELLIGENCE --> STORE
+  INTELLIGENCE --> ECONOMY
