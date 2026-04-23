@@ -1,0 +1,37 @@
+
+**PASTE THIS ENTIRE CONTENT:**
+
+---
+
+```markdown
+# 🌙 Luna Engine — Developer Onboarding Guide
+
+Welcome to the **Luna Engine**, the logic core of the Mystery Tarot Teacher App.  
+This guide teaches you how to understand, extend, and safely modify the engine.
+
+---
+
+# 🧭 1. What the Luna Engine Is
+
+The Luna Engine is:
+
+- A **modular logic system**
+- A **collection of isolated engines**
+- A **UI‑agnostic framework**
+- A **predictable architecture**
+- A **safe environment for AI‑generated code**
+
+It is NOT:
+
+- A UI framework  
+- A rendering system  
+- A React component  
+- A place for animations  
+- A place for business logic hacks  
+
+---
+
+# 🧱 2. Engine Structure
+
+Every engine lives in:
+
