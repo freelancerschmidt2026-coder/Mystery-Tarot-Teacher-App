@@ -1,0 +1,42 @@
+.spellbook-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spellbook {
+  width: 600px;
+  height: 400px;
+  background: url('/images/spellbook.png') no-repeat center/cover;
+  display: flex;
+  animation: openBook 1.5s ease-out forwards;
+}
+
+.page {
+  width: 50%;
+  padding: 40px;
+  color: #f5e6c8;
+  font-family: 'Cinzel', serif;
+}
+
+.purchase-btn {
+  background: gold;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px gold; }
+  to { box-shadow: 0 0 30px gold; }
+}
