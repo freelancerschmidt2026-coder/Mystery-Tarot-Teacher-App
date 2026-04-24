@@ -1,0 +1,28 @@
+// Orchestrates cross-card storytelling
+
+import {
+  CrossCardStory,
+  CardStoryRole,
+} from "./CrossCardStoryTypes";
+
+import { CrossCardStoryRules } from "./CrossCardStoryRules";
+
+let storyIdCounter = 0;
+
+export class CrossCardStoryEngine {
+  private rules = new CrossCardStoryRules();
+
+  createStory(spreadId: string, roles: CardStoryRole[]): CrossCardStory {
+    const id = `LUNA_STORY_${++storyIdCounter}`;
+    const title = `The Story of Spread ${spreadId}`;
+
+    const beats = this.rules.generateBeats(roles);
+
+    return {
+      id,
+      title,
+      beats,
+      involvedCards: roles,
+    };
+  }
+}
