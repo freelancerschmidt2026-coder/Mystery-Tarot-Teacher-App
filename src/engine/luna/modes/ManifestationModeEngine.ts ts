@@ -1,0 +1,26 @@
+import { ModeProfile, ModeTriggerContext } from "./ModeTypes";
+
+export class ManifestationModeEngine {
+  shouldActivate(context: ModeTriggerContext): boolean {
+    const emotion = context.emotionalState.toLowerCase();
+
+    if (emotion.includes("hope")) return true;
+    if (emotion.includes("desire")) return true;
+    if (context.questionThemes.includes("manifestation")) return true;
+    if (context.moonPhase === "Full Moon") return true;
+
+    return false;
+  }
+
+  getProfile(): ModeProfile {
+    return {
+      mode: "MANIFESTATION",
+      uiThemeTag: "radiant",
+      lunaMoodBias: "ASCENDED",
+      animationIntensity: "HIGH",
+      voiceToneBias: "bright",
+      recommendedRituals: ["MANIFESTATION", "DESTINY"],
+      recommendedDeckTags: ["manifestation", "power"],
+    };
+  }
+}
