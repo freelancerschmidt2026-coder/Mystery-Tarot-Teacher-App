@@ -1,4 +1,5 @@
-// Placeholder: tracks what Luna "knows" about your repo structure
+// LunaGitHubUnderstandingEngine.js
+// Tracks what Luna "knows" about your repository structure
 
 export const LunaGitHubUnderstandingEngine = {
   repoMap: [],
@@ -9,11 +10,16 @@ export const LunaGitHubUnderstandingEngine = {
       purpose,
       registeredAt: new Date().toISOString()
     };
+
     this.repoMap.push(entry);
     return entry;
   },
 
   getFilesByPurpose(purpose) {
     return this.repoMap.filter(e => e.purpose === purpose);
+  },
+
+  getAllFiles() {
+    return this.repoMap;
   }
 };
