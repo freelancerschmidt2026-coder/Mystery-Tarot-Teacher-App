@@ -1,15 +1,17 @@
 // Core shared types for Luna's Tarot Creation Engine
 
+// ELEMENTS & ORIENTATION
 export type ElementType = "FIRE" | "WATER" | "AIR" | "EARTH" | "SPIRIT";
-
 export type CardOrientation = "UPRIGHT" | "REVERSED";
 
+// KEYWORDS
 export interface TarotKeywordSet {
   light: string[];
   shadow: string[];
   neutral?: string[];
 }
 
+// TAROT CARD TEMPLATE
 export interface TarotCardTemplate {
   id: string;
   name: string;
@@ -29,6 +31,7 @@ export interface TarotCardTemplate {
   pathMeaning: string;
 }
 
+// SPREAD POSITION
 export interface SpreadPosition {
   id: string;
   label: string;
@@ -37,6 +40,7 @@ export interface SpreadPosition {
   recommendedOrientation?: CardOrientation;
 }
 
+// SPREAD TEMPLATE
 export interface TarotSpreadTemplate {
   id: string;
   name: string;
@@ -45,6 +49,7 @@ export interface TarotSpreadTemplate {
   recommendedDeckId?: string;
 }
 
+// DECK BOX META
 export interface DeckBoxMeta {
   id: string;
   name: string;
@@ -57,6 +62,7 @@ export interface DeckBoxMeta {
   energySignature: string;
 }
 
+// DECK BOX VISUAL PROFILE
 export interface DeckBoxVisualProfile {
   boxModelId: string;
   textureId: string;
@@ -64,6 +70,7 @@ export interface DeckBoxVisualProfile {
   particleProfileId: string;
 }
 
+// TAROT DECK DEFINITION
 export interface TarotDeckDefinition {
   id: string;
   name: string;
@@ -75,6 +82,16 @@ export interface TarotDeckDefinition {
   boxVisual: DeckBoxVisualProfile;
 }
 
+// 🌙 NEW — PAST READING SNAPSHOT (Unified for Ethereal Mode)
+export interface PastReadingSnapshot {
+  id: string;
+  question: string;
+  answerSummary: string;
+  createdAt: string;
+  auraColor: string;
+}
+
+// MEMBER PROFILE SNAPSHOT (UPDATED)
 export interface MemberProfileSnapshot {
   memberId: string;
   experienceLevel: "BEGINNER" | "INTERMEDIATE" | "ADVANCED" | "MENTOR";
@@ -82,8 +99,12 @@ export interface MemberProfileSnapshot {
   frequentQuestions: string[];
   emotionalPatterns: string[];
   preferredDeckIds: string[];
+
+  // 🌙 NEW FIELD — REQUIRED FOR ETHEREAL MODE
+  pastReadings: PastReadingSnapshot[];
 }
 
+// DREAM FRAGMENTS
 export interface LunaDreamFragment {
   id: string;
   title: string;
