@@ -1,3 +1,4 @@
+// LunaCodeGenerationEngine.js
 // Tracks generated code snippets and their intended location
 
 export const LunaCodeGenerationEngine = {
@@ -9,10 +10,11 @@ export const LunaCodeGenerationEngine = {
       path,
       description,
       code,
-      status: "PENDING_REVIEW", // PENDING_REVIEW, APPROVED, REJECTED
+      status: "PENDING_REVIEW", // PENDING_REVIEW | APPROVED | REJECTED
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString()
     };
+
     this.generatedSnippets.push(snippet);
     return snippet;
   },
@@ -20,7 +22,18 @@ export const LunaCodeGenerationEngine = {
   approveSnippet(snippetId) {
     const snip = this.generatedSnippets.find(s => s.snippetId === snippetId);
     if (!snip) return null;
+
     snip.status = "APPROVED";
+    snip.updatedAt = new Date().toISOString();
+    return snip;
+  },
+
+  rejectSnippet(snippetId, notes) {
+    const snip = this.generatedSnippets.find(s => s.snippetId === snippetId);
+    if (!snip) return null;
+
+    snip.status = "REJECTED";
+    snip.notes = notes;
     snip.updatedAt = new Date().toISOString();
     return snip;
   }
