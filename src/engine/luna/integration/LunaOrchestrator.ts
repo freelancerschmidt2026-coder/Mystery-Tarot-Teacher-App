@@ -39,10 +39,15 @@ import {
   RitualTemplate,
 } from "../rituals/types";
 
+// ETHEREAL MODE IMPORTS
+import { LunaOrchestratorEthereal } from "./LunaOrchestratorEthereal";
+import { PastReadingSnapshot } from "../ethereal/EtherealModeTypes";
+
 export interface OrchestratedReadingContext {
   member: MemberProfileSnapshot;
   question: string;
   emotionalState: string;
+  animationsEnabled: boolean; // NEW TOGGLE
 }
 
 export interface OrchestratedReadingResult {
@@ -93,9 +98,33 @@ export class LunaOrchestrator {
 
   orchestrateReading(
     ctx: OrchestratedReadingContext
-  ): OrchestratedReadingResult {
+  ): OrchestratedReadingResult | any {
     const { member, question, emotionalState } = ctx;
 
+    // 🌙 NEW: ETHEREAL MODE BRANCH
+    if (ctx.animationsEnabled === false) {
+      const ethereal = new LunaOrchestratorEthereal();
+
+      const pastReadings: PastReadingSnapshot[] =
+        member.pastReadings ?? [];
+
+      const current = {
+        question,
+        emotionalState,
+        memberId: member.memberId,
+      };
+
+      const lunaInterpretation =
+        "Luna’s interpretation will be inserted here.";
+
+      return ethereal.runEtherealReading(
+        pastReadings,
+        current,
+        lunaInterpretation
+      );
+    }
+
+    // 🌙 CINEMATIC MODE (ORIGINAL LOGIC)
     const { state: moonState, effects: moonEffects } =
       this.moonEngine.getPhaseEffects();
 
