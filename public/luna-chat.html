@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luna Chat</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    #chat {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .msg {
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      max-width: 70%;
+    }
+
+    .user {
+      background: #4a4a4a;
+      align-self: flex-end;
+    }
+
+    .luna {
+      background: #6a00ff;
+      align-self: flex-start;
+    }
+
+    #input-area {
+      display: flex;
+      padding: 10px;
+      background: #222;
+    }
+
+    #input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    #send {
+      margin-left: 10px;
+      padding: 10px 20px;
+      background: #6a00ff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="chat"></div>
+
+  <div id="input-area">
+    <input id="input" placeholder="Talk to Luna..." />
+    <button id="send">Send</button>
+  </div>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const input = document.getElementById("input");
+    const send = document.getElementById("send");
+
+    function addMessage(text, sender) {
+      const div = document.createElement("div");
+      div.className = "msg " + sender;
+      div.textContent = text;
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    async function talkToLuna(message) {
+      addMessage(message, "user");
+
+      const res = await fetch("http://localhost:3000/luna", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await res.json();
+      addMessage(data.reply, "luna");
+    }
+
+    send.onclick = () => {
+      const msg = input.value.trim();
+      if (!msg) return;
+      talkToLuna(msg);
+      input.value = "";
+    };
+  </script>
+
+</body>
+</html>
