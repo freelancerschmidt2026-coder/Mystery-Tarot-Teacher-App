@@ -99,6 +99,11 @@
           body: JSON.stringify({ message })
         });
 
+        if (!res.ok) {
+          addMessage("Luna server error: " + res.status, "luna");
+          return;
+        }
+
         const data = await res.json();
         addMessage(data.reply || "Luna did not respond.", "luna");
 
